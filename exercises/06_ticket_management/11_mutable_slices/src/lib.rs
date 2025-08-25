@@ -1,7 +1,5 @@
 pub fn squared(numbers: &mut [i32]) {
-    for x in numbers {
-        *x = *x * *x;
-    }
+    numbers.iter_mut().for_each(|x| *x = *x * *x)
 }
 
 #[cfg(test)]
